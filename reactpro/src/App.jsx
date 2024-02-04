@@ -1,3 +1,4 @@
+import Fruits from "./components/Fruits";
 import Hello from "./components/Hello";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         emoji="🙁"
         seatNum={seatNumbers}
       /> */}
-      <Hello person={person} />
+      <Fruits />
+      {/* <Hello person={person} /> */}
     </div>
   );
 }
