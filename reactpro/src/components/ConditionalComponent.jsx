@@ -3,7 +3,7 @@ import Welcome from "./Welcome";
 
 const ConditionalComponent = () => {
 //   const display = false;
-const display = true;
+// const display = true;
 //   if (display) {
 //     return (
 //       <div>
@@ -18,11 +18,23 @@ const display = true;
 //     );
 //   }
 
+// if(display){
+//     return <Welcome />
+// } else{
+//     return <Code/>
+// }
+
+let messageOne = <h1> This is Message 1..</h1>
+let messageTwo = <h1> This is Message 2..</h1>
+// let message;
+const display = true;
+
 if(display){
-    return <Welcome />
-} else{
-    return <Code/>
+    return messageOne
+} else {
+    return messageTwo
 }
+// return message;
   
 };
 
