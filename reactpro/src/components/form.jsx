@@ -1,13 +1,8 @@
 import { useState } from "react";
 
 const Form = () => {
-const [name, setName] = useState("")
-
-//   function handleChange(e) {
-//     // console.log("Change Occured!!!");
-//     // console.log(e.target.value);
-//     // setName(e.target.value);
-//   }
+  // here, i am creating object in USEState without creating multiple useStates
+  const [name, setName] = useState({ firstName: " ", lastName: " " });
 
   return (
     <>
@@ -17,8 +12,19 @@ const [name, setName] = useState("")
             return handleChange(e)
         }} /> */}
         {/* <input type="text" value={name} onChange={(e) => handleChange(e)} /> */}
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      </form>
+        <input
+          type="text"
+          value={name.firstName}
+          onChange={(e) => setName({ ...name, firstName: e.target.value })}
+        />{" "}
+        <br />
+        <input
+          type="text"
+          value={name.lastName}
+          onChange={(e) => setName({ ...name, lastName: e.target.value })}
+        />
+      </form><br/>
+      {name.firstName} - {name.lastName}
     </>
   );
 };
