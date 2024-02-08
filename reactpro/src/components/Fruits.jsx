@@ -8,53 +8,66 @@ const Fruits = () => {
     {
       name: "Apple",
       price: 10,
-      emoji: " 🍎 "
+      emoji: " 🍎 ",
+      soldout: false
     },
     {
       name: "Banana",
       price: 7,
-      emoji: " 🍌 "
+      emoji: " 🍌 ",
+      soldout: false
     },
     {
       name: "Mango",
       price: 20,
-      emoji: " 🍎 "
+      emoji: " 🍎 ",
+      soldout: false
     },
     {
       name: "Orange",
       price: 8,
-      emoji: " 🍊 "
+      emoji: " 🍊 ",
+      soldout: false
     },
     {
       name: "Graps",
       price: 11,
-      emoji: " 🍇 "
+      emoji: " 🍇 ",
+      soldout: false
     },
     {
       name: "Pineapple",
       price: 13,
-      emoji: " 🍍 "
+      emoji: " 🍍 ",
+      soldout: true
     },
     {
       name: "Kiwi",
       price: 4,
-      emoji: " 🥝 "
+      emoji: " 🥝 ",
+      soldout: true
     },
     {
       name: "Peach",
       price: 9,
-      emoji: " 🍑 "
+      emoji: " 🍑 ",
+      soldout: false
     }
   ];
   return (
     <div>
-    {/* If i want to get Fruit component in Fruits component, we need to import "Fruit" component */}
-    <ul>
+      {/* If i want to get Fruit component in Fruits component, we need to import "Fruit" component */}
+      <ul>
         {fruits.map((fruit) => (
-            <Fruit key={fruit.name} name = {fruit.name} price = {fruit.price} emoji = {fruit.emoji}/>
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            emoji={fruit.emoji}
+            soldout = {fruit.soldout}
+          />
         ))}
-    </ul>
-
+      </ul>
 
       {/* <ul>
         {fruits.map((fruit) => (
