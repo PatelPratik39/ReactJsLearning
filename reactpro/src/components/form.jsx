@@ -4,6 +4,11 @@ const Form = () => {
   // here, i am creating object in USEState without creating multiple useStates
   const [name, setName] = useState({ firstName: " ", lastName: " " });
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(name);
+  }
+
   return (
     <>
       <form>
@@ -18,12 +23,18 @@ const Form = () => {
           onChange={(e) => setName({ ...name, firstName: e.target.value })}
         />{" "}
         <br />
+        <br />
         <input
           type="text"
           value={name.lastName}
           onChange={(e) => setName({ ...name, lastName: e.target.value })}
         />
-      </form><br/>
+        <br />
+        <br />
+        <button onClick={(e) => handleSubmit(e)}>Submit</button>
+      </form>
+      <br />
+      <br />
       {name.firstName} - {name.lastName}
     </>
   );
