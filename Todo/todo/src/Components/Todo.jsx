@@ -26,7 +26,7 @@ const Todo = () => {
         <TodoItem key={item} item={item}/>
       ))} */}
       <Form todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </>
   );
 };
