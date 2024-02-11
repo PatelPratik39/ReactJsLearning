@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from './form.module.css';
 
-
 const Form = ({todos, setTodos}) => {
 
   const [todo, setTodo] = useState({name:'', done: false});
@@ -20,6 +19,7 @@ const Form = ({todos, setTodos}) => {
             type="text"
             value={todo.name}
             placeholder="Enter Todo Item.."
+            required
             // onChange={(e) => setTodo(e.target.value)}
             onChange={(e) => setTodo({name: e.target.value, done: false})}
           />
