@@ -1,11 +1,17 @@
 import TodoItem from "./TodoItem";
-import styles from './todoList.module.css';
+import styles from "./todoList.module.css";
 
 const TodoList = ({ todos, setTodos }) => {
+  const sortedTodo = todos.slice().sort((a, b) => a.done - b.done);
   return (
     <div className={styles.list}>
-      {todos.map((item) => (
-        <TodoItem key={item.name} item={item} todos={todos} setTodos={setTodos} />
+      {sortedTodo.map((item) => (
+        <TodoItem
+          key={item.name}
+          item={item}
+          todos={todos}
+          setTodos={setTodos}
+        />
       ))}
     </div>
   );
