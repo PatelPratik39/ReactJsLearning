@@ -1,14 +1,17 @@
-import { useState } from 'react'
-
+import { useState } from "react";
+import Search from "./Components/Search";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1> Hello Food recipe Application</h1>
+      <div className="app">
+        <h1> Welcome to My Food Recipe App!!</h1>
+        <Search />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
