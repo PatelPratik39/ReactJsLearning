@@ -1,14 +1,22 @@
 import { useState } from "react";
 import Search from "./Components/Search";
+import FoodList from "./Components/FoodList";
+import Nav from "./Components/Nav";
+import "./App.css";
+import Container from "./Components/Container";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  const [foodData, setFoodData] = useState([]);
 
   return (
     <>
       <div className="app">
-        <h1> Welcome to My Food Recipe App!!</h1>
-        <Search />
+        <Nav />
+        <Search foodData={foodData} setFoodData={setFoodData} />
+        <Container>
+            <FoodList foodData={foodData} />
+          {/* <FoodList foodData={foodData} /> */}
+        </Container>
       </div>
     </>
   );
