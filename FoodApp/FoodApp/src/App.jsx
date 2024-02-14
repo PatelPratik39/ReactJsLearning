@@ -4,18 +4,26 @@ import FoodList from "./Components/FoodList";
 import Nav from "./Components/Nav";
 import "./App.css";
 import Container from "./Components/Container";
+import InnerContainer from "./Components/InnerContainer";
+import FoodDetail from "./Components/FoodDetail";
+// import FoodDetails from "./Components/FoodDetails";
 
 function App() {
   const [foodData, setFoodData] = useState([]);
-
+  const [foodId, setFoodId] = useState("");
+  
   return (
     <>
-      <div className="app">
+      <div className="App">
         <Nav />
         <Search foodData={foodData} setFoodData={setFoodData} />
         <Container>
-            <FoodList foodData={foodData} />
-          {/* <FoodList foodData={foodData} /> */}
+          <InnerContainer>
+            <FoodList setFoodId={setFoodId} foodData={foodData} />
+          </InnerContainer>
+          <InnerContainer>
+            <FoodDetail/>
+          </InnerContainer>
         </Container>
       </div>
     </>

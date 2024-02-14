@@ -1,7 +1,7 @@
-import Styles from './innerContainer.module.css'
+import styles from "./innerContainer.module.css";
 
-const InnerContainer = (children) => {
-    return <div className={styles.innerCintainer}>{children}</div>;
-}
- 
+const InnerContainer = ({children}) => {
+  return <div className={styles.innerContainer}>{children}</div>;
+};
+
 export default InnerContainer;
