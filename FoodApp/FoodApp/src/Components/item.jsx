@@ -1,6 +1,6 @@
 import styles from './item.module.css';
 
-const Item = () => {
+const Item = ({item}) => {
   return (
     <div className={styles.itemContainer}>
       <div className={styles.imageContainer}>

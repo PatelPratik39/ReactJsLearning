@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import styles from "./foodDetails.module.css";
-import ItemList from "./itemList";
+import ItemList from "./ItemList";
 
 const FoodDetails = ({ foodId }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [food, setFood] = useState({});
+
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
   const API_KEY = "8765847114e944939f129a3410b3d278";
 
@@ -17,13 +18,13 @@ const FoodDetails = ({ foodId }) => {
       setIsLoading(false);
     }
     fetchFood();
-  }, [foodId]);
+  }, [foodId]); // i have added foodId as in dependecy array of UseEffect hook to get data when we change the recipe item where it will call new API call
 
   return (
     <div className={styles.recipeCard}>
       <div className={styles.recipeName}>
         <h1>{food.title}</h1>
-        <img className={styles.recipeImage} src={food.image} alt="image" />
+        <img className={styles.recipeImage} src={food.image} alt="" />
       </div>
       <div className={styles.recipeDetails}>
         <span>

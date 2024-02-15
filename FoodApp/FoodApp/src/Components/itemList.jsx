@@ -1,4 +1,4 @@
-import Item from "./item";
+import Item from "./Item";
 
 const ItemList = ({food, isLoading}) => {
     return (
@@ -7,7 +7,7 @@ const ItemList = ({food, isLoading}) => {
           <p>Loading...</p>
         ) : (
           food.extendedIngredients.map((item) => (
-            <Item  item={item} />
+            <Item key={food.id} item={item} />
           ))
         )}
       </div>
