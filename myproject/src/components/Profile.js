@@ -1,9 +1,9 @@
 const Profile = (props) => {
-  console.log(props);
-  props.name = 'Mowglee';
+  // destructureing object
+  const { name, lastName } = props;
   return (
     <h1>
-      Name : {props.name} {props.lastName}
+      Name : {name} {lastName}
     </h1>
   );
 };
