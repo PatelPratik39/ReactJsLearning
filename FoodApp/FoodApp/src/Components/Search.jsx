@@ -20,14 +20,12 @@ const Search = ({ foodData, setFoodData }) => {
   return (
     <div className={styles.searchContainer}>
       <h2>Search your Food Item 🔎 :</h2>
-  
       <input
         type="text"
         className={styles.input}
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      
     </div>
   );
 };
