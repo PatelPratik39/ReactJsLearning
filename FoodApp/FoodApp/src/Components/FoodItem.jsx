@@ -1,6 +1,6 @@
 import styles from "./foodItem.module.css";
 
-const FoodItem = ({ food }) => {
+const FoodItem = ({ food, setFoodId }) => {
   return (
     <div className={styles.itemContainer}>
       <img className={styles.itemImage} src={food.image} alt="" />
@@ -11,9 +11,11 @@ const FoodItem = ({ food }) => {
         <button
           onClick={() => {
             console.log(food.id);
+            setFoodId(food.id);
           }}
           className={styles.itemButton}
         >
+          {" "}
           View Recipe{" "}
         </button>
       </div>

@@ -5,13 +5,12 @@ import Nav from "./Components/Nav";
 import "./App.css";
 import Container from "./Components/Container";
 import InnerContainer from "./Components/InnerContainer";
-import FoodDetail from "./Components/FoodDetail";
-// import FoodDetails from "./Components/FoodDetails";
+import FoodDetails from "./Components/FoodDetails";
 
 function App() {
   const [foodData, setFoodData] = useState([]);
-  const [foodId, setFoodId] = useState("");
-  
+  const [foodId, setFoodId] = useState("656329");
+
   return (
     <>
       <div className="App">
@@ -22,7 +21,7 @@ function App() {
             <FoodList setFoodId={setFoodId} foodData={foodData} />
           </InnerContainer>
           <InnerContainer>
-            <FoodDetail/>
+            <FoodDetails foodId={foodId} />
           </InnerContainer>
         </Container>
       </div>
