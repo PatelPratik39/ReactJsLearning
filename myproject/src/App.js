@@ -1,5 +1,6 @@
 import "./App.css";
-import ConditionalComponent from "./components/ConditionalComponent";
+// import ConditionalComponent from "./components/ConditionalComponent";
+import Product from "./components/Product";
 // import FunctionEvent from "./components/FunctionEvent";
 // import Counter from "./components/Counter";
 // import FunctionalCounter from "./components/FunctionalCounter";
@@ -16,10 +17,11 @@ function App() {
       {/* <Message messageContent = ' This is a message from Props .. '/> */}
       {/* <Counter /> */}
       {/* <FunctionalCounter/> */}
-      <ConditionalComponent />
+      {/* <ConditionalComponent /> */}
       {/* <Resume name = 'Mowglee'/> */}
       {/* <FunctionEvent/> */}
       {/* <ClassEvent /> */}
+      <Product/>
     </div>
   );
 }
