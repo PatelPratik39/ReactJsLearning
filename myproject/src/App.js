@@ -1,10 +1,13 @@
 import "./App.css";
+import ConditionalComponent from "./components/ConditionalComponent";
 // import FunctionEvent from "./components/FunctionEvent";
 // import Counter from "./components/Counter";
+// import FunctionalCounter from "./components/FunctionalCounter";
 // import Message from "./components/Message";
 // import Profile from "./components/Profile";
 // import Resume from "./components/Resume";
-import ClassEvent from "./components/ClassEvent";
+// import ClassEvent from "./components/ClassEvent";
+
 function App() {
   return (
     <div className="App">
@@ -12,9 +15,11 @@ function App() {
       {/* <Profile name="Pratik" lastName="Patel"/> */}
       {/* <Message messageContent = ' This is a message from Props .. '/> */}
       {/* <Counter /> */}
+      {/* <FunctionalCounter/> */}
+      <ConditionalComponent />
       {/* <Resume name = 'Mowglee'/> */}
       {/* <FunctionEvent/> */}
-      <ClassEvent />
+      {/* <ClassEvent /> */}
     </div>
   );
 }
