@@ -10,6 +10,7 @@ const ConditionalComponent = () => {
   ) : (
     <div>
       <h2>Nothing to see HERE!!</h2>
+      <p></p>
     </div>
   );
 };
