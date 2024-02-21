@@ -1,6 +1,7 @@
 import "./App.css";
+import Form from "./components/Form";
 // import ConditionalComponent from "./components/ConditionalComponent";
-import Product from "./components/Product";
+// import Product from "./components/Product";
 // import FunctionEvent from "./components/FunctionEvent";
 // import Counter from "./components/Counter";
 // import FunctionalCounter from "./components/FunctionalCounter";
@@ -18,7 +19,8 @@ function App() {
       {/* <Counter /> */}
       {/* <FunctionalCounter/> */}
       {/* <ConditionalComponent /> */}
-      <Product/>
+      {/* <Product/> */}
+      <Form/>
       {/* <Resume name = 'Mowglee'/> */}
       {/* <FunctionEvent/> */}
       {/* <ClassEvent /> */}
