@@ -1,6 +1,7 @@
 import "./App.css";
-import Form from "./components/Form";
-import Todo from "./components/Todo";
+// import Form from "./components/Form";
+import InlineComponent from "./components/InlineComponent";
+// import Todo from "./components/Todo";
 // import ConditionalComponent from "./components/ConditionalComponent";
 // import Product from "./components/Product";
 // import ConditionalComponent from "./components/ConditionalComponent";
@@ -27,7 +28,8 @@ function App() {
       {/* <Resume name = 'Mowglee'/> */}
       {/* <FunctionEvent/> */}
       {/* <ClassEvent /> */}
-    <Todo/>
+    {/* <Todo/> */}
+    <InlineComponent/>
       {/* <Resume name = 'Mowglee'/> */}
       {/* <FunctionEvent/> */}
       {/* <ClassEvent /> */}
