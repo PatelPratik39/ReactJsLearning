@@ -4,7 +4,7 @@ const Child = ({ count }) => {
   return (
     <>
       <div>
-        <h2>Child count is {count}</h2>
+        <h2 className="childh2">Child count is {count}</h2>
       </div>
     </>
   );

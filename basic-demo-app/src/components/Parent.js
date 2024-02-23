@@ -17,7 +17,9 @@ const Parent = () => {
   return (
     <>
       <div>
-        <h1>Parent Count is : {parentCount}</h1>
+        <h1> This is Parent Component</h1>
+        <h2 className="parenth2">Parent Count is : {parentCount}</h2>
+
         <Child count={childCount} />
         <button className="parentbtn" onClick={handleParentCount}>
           Increment Parent Count

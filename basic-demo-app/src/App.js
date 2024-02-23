@@ -1,7 +1,7 @@
 
 import './App.css';
 import Parent from './components/Parent';
-import Table from './components/Table';
+// import Table from './components/Table';
 
 function App() {
   return (
