@@ -30,7 +30,6 @@ body{
     display: block;
 }
 .todoButton{
-   
    width: 100%;
    border: none;
    height: 50px;
@@ -46,7 +45,7 @@ body{
     margin: auto;
     padding: 20px;
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.0em;
     box-shadow: 0 10px 16px rgb(128, 124, 124);
     
 }
