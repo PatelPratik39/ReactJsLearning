@@ -10,7 +10,7 @@ const Todo = ({ todoItem, todoList, setTodoList }) => {
       <div className={styles.todoitem}>
         <h3 className={styles.todoname}>{todoItem.name}</h3>
         <button className={styles.deleteButton} onClick={deleteTodo}>
-          Done
+          Remove
         </button>
       </div>
     </div>
